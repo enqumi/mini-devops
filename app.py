@@ -6,6 +6,10 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/roadmap')
+def roadmap():
+    return render_template('roadmap.html')
+
 @app.route('/health')
 def health():
     return "OK", 200
