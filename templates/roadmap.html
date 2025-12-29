@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Roadmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="h-full bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <div class="min-h-full py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <!-- Заголовок -->
+            <div class="text-center mb-12">
+                <h1 class="text-5xl font-bold tracking-tight mb-4">
+                    🚀 DevOps Roadmap 2025
+                </h1>
+                <p class="text-xl text-purple-200">
+                    Поэтапный план освоения DevOps — от новичка до профи
+                </p>
+            </div>
+
+            <!-- Карточки-Этапы -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Карточка 1 -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-purple-500/30 hover:border-purple-400/60 transition-all hover:scale-105">
+                    <div class="text-5xl mb-4">🐧</div>
+                    <h3 class="text-2xl font-bold mb-3">Linux & Bash</h3>
+                    <p class="text-gray-300 mb-6">
+                        Основы командной строки, навигация, скрипты, процессы, права доступа.
+                    </p>
+                    <div class="w-full bg-gray-700 rounded-full h-3">
+                        <div class="bg-green-500 h-3 rounded-full w-3/4"></div>
+                    </div>
+                    <span class="text-sm text-gray-400 mt-2 block">75% освоено</span>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-purple-500/30 hover:border-purple-400/60 transition-all hover:scale-105">
+                    <div class="text-5xl mb-4">🐙</div>
+                    <h3 class="text-2xl font-bold mb-3">Git & GitHub</h3>
+                    <p class="text-gray-300 mb-6">
+                        Коммиты, ветки, pull requests, GitHub Actions, коллаборация.
+                    </p>
+                    <div class="w-full bg-gray-700 rounded-full h-3">
+                        <div class="bg-green-500 h-3 rounded-full w-full"></div>
+                    </div>
+                    <span class="text-sm text-green-400 mt-2 block">✅ Завершено!</span>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-purple-500/30 hover:border-purple-400/60 transition-all hover:scale-105">
+                    <div class="text-5xl mb-4">🐳</div>
+                    <h3 class="text-2xl font-bold mb-3">Docker</h3>
+                    <p class="text-gray-300 mb-6">
+                        Контейнеры, Dockerfile, docker-compose, образы, volumes.
+                    </p>
+                    <div class="w-full bg-gray-700 rounded-full h-3">
+                        <div class="bg-blue-500 h-3 rounded-full w-11/12"></div>
+                    </div>
+                    <span class="text-sm text-gray-400 mt-2 block">90% — ты уже здесь!</span>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-purple-500/30 hover:border-purple-400/60 transition-all hover:scale-105">
+                    <div class="text-5xl mb-4">☸️</div>
+                    <h3 class="text-2xl font-bold mb-3">Kubernetes</h3>
+                    <p class="text-gray-300 mb-6">
+                        Pods, Deployments, Services, Helm, Minikube/KIND.
+                    </p>
+                    <div class="w-full bg-gray-700 rounded-full h-3">
+                        <div class="bg-yellow-500 h-3 rounded-full w-1/4"></div>
+                    </div>
+                    <span class="text-sm text-gray-400 mt-2 block">Следующий этап</span>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-purple-500/30 hover:border-purple-400/60 transition-all hover:scale-105">
+                    <div class="text-5xl mb-4">🔄</div>
+                    <h3 class="text-2xl font-bold mb-3">CI/CD</h3>
+                    <p class="text-gray-300 mb-6">
+                        GitHub Actions, Jenkins, автоматизация тестов и деплоя.
+                    </p>
+                    <div class="w-full bg-gray-700 rounded-full h-3">
+                        <div class="bg-purple-500 h-3 rounded-full w-0"></div>
+                    </div>
+                    <span class="text-sm text-gray-400 mt-2 block">Впереди</span>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-purple-500/30 hover:border-purple-400/60 transition-all hover:scale-105">
+                    <div class="text-5xl mb-4">☁️</div>
+                    <h3 class="text-2xl font-bold mb-3">Cloud (AWS/Azure/GCP)</h3>
+                    <p class="text-gray-300 mb-6">
+                        EC2, S3, VPC, IAM, Terraform.
+                    </p>
+                    <div class="w-full bg-gray-700 rounded-full h-3">
+                        <div class="bg-red-500 h-3 rounded-full w-0"></div>
+                    </div>
+                    <span class="text-sm text-gray-400 mt-2 block">Финал</span>
+                </div>
+            </div>
+
+            <!-- Навигация -->
+            <div class="text-center mt-12">
+                <a href="/" class="text-purple-300 hover:text-purple-100 underline text-lg">
+                    ← Вернуться на главную
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

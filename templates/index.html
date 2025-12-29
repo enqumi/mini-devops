@@ -4,49 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini DevOps App</title>
-    <!-- Tailwind CSS через CDN (самая свежая версия на 2025) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Опционально: кастомные цвета и шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
                 }
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="h-full bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
-    <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-md w-full space-y-8">
-            <div>
-                <h1 class="text-center text-5xl font-bold tracking-tight">
+    <div class="min-h-full flex flex-col">
+
+        <!-- Навигационное меню -->
+        <nav class="bg-black/20 backdrop-blur-md border-b border-purple-500/30">
+            <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-purple-300 hover:text-white transition">
                     🚀 Mini DevOps App
-                </h1>
-                <p class="mt-4 text-center text-xl text-purple-200">
-                    Привет из Docker-контейнера!
-                </p>
-            </div>
-            <div class="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-purple-500/20">
-                <h2 class="text-2xl font-semibold text-center mb-6">Статус</h2>
-                <div class="text-center">
-                    <span class="inline-flex items-center px-6 py-3 rounded-full text-lg font-medium bg-green-500/20 text-green-300 border border-green-500/50">
-                        🟢 Всё работает отлично!
-                    </span>
-                </div>
-                <div class="mt-8 text-center">
-                    <a href="/health" class="text-purple-300 hover:text-purple-100 underline">
-                        Проверить /health эндпоинт →
+                </a>
+                <div class="space-x-8 text-lg">
+                    <a href="/" class="text-white font-medium border-b-2 border-purple-500 pb-1">
+                        Главная
+                    </a>
+                    <a href="/roadmap" class="text-purple-300 hover:text-white hover:border-b-2 hover:border-purple-400 pb-1 transition">
+                        Roadmap
                     </a>
                 </div>
             </div>
-            <p class="text-center text-sm text-gray-400 mt-12">
-                Сделано с Flask + Tailwind + Docker
-            </p>
+        </nav>
+
+        <!-- Основной контент главной страницы -->
+        <div class="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-md w-full space-y-8 text-center">
+                <h1 class="text-5xl font-bold tracking-tight">
+                    Добро пожаловать!
+                </h1>
+                <p class="mt-4 text-xl text-purple-200">
+                    Это твое первое Flask-приложение в Docker-контейнере
+                </p>
+                <div class="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-purple-500/20">
+                    <span class="inline-flex items-center px-6 py-3 rounded-full text-lg font-medium bg-green-500/20 text-green-300 border border-green-500/50">
+                        🟢 Приложение работает идеально
+                    </span>
+                    <div class="mt-8">
+                        <a href="/roadmap" class="text-purple-300 hover:text-purple-100 underline text-lg">
+                            Перейти к DevOps Roadmap →
+                        </a>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 mt-12">
+                    Сделано с Flask + Tailwind + Docker
+                </p>
+            </div>
         </div>
     </div>
 </body>
